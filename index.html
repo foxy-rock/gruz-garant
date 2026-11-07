@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ТрансЛайн — грузоперевозки по России и СНГ</title>
+    <meta
+      name="description"
+      content="Доставка грузов любой сложности по России и СНГ. Страховка, отслеживание 24/7, выгодные тарифы."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ===== 1. HEADER ===== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a href="#hero" class="logo">
+          <span class="logo__icon"
+            ><img src="./images/images.png" width="60px" alt=""
+          /></span>
+          <span class="logo__text">Груз<b>Гарант</b></span>
+        </a>
+        <nav class="nav" id="nav">
+          <a href="#services">Услуги</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#fleet">Автопарк</a>
+          <a href="#calculator">Калькулятор</a>
+          <a href="#geography">География</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+        <div class="header__right">
+          <a href="tel:+78005553535" class="header__phone">8 800 555-35-35</a>
+          <button class="btn btn--primary btn--sm" data-scroll="#contacts">
+            Заказать
+          </button>
+          <button class="burger" id="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== 2. HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <span class="badge">Работаем 24/7 · 365 дней в году</span>
+            <h1>
+              Грузоперевозки <span class="accent">без забот</span> по России и
+              СНГ
+            </h1>
+            <p class="hero__subtitle">
+              Доставим ваш груз вовремя и в сохранности. Страховка до 10 млн ₽,
+              GPS-отслеживание и фиксированная цена в договоре.
+            </p>
+            <div class="hero__actions">
+              <button class="btn btn--primary btn--lg" data-scroll="#contacts">
+                Рассчитать стоимость
+              </button>
+              <button class="btn btn--ghost btn--lg" data-scroll="#services">
+                Наши услуги
+              </button>
+            </div>
+            <div class="hero__stats">
+              <div class="hero__stat">
+                <b data-count="12500">0</b><span>доставок в год</span>
+              </div>
+              <div class="hero__stat">
+                <b data-count="240">0</b><span>машин в парке</span>
+              </div>
+              <div class="hero__stat">
+                <b data-count="98">0</b><span>% вовремя</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 3. STATS STRIP ===== -->
+      <section class="stats section">
+        <div class="container">
+          <div class="stats__grid">
+            <div class="stats__card reveal">
+              <div class="stats__num"><span data-count="15">0</span> лет</div>
+              <p>на рынке грузоперевозок</p>
+            </div>
+            <div class="stats__card reveal">
+              <div class="stats__num"><span data-count="300">0</span>+</div>
+              <p>городов доставки</p>
+            </div>
+            <div class="stats__card reveal">
+              <div class="stats__num"><span data-count="12000">0</span>+</div>
+              <p>довольных клиентов</p>
+            </div>
+            <div class="stats__card reveal">
+              <div class="stats__num"><span data-count="20">0</span> млн ₽</div>
+              <p>страховое покрытие</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. SERVICES ===== -->
+      <section class="services section" id="services">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">Услуги</span>
+            <h2>Мы доставим что угодно и куда угодно</h2>
+            <p>Полный спектр транспортных услуг для бизнеса и частных лиц</p>
+          </div>
+          <div class="services__grid">
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-коробка-50.png" alt="" />
+              </div>
+              <h3>Сборные грузы</h3>
+              <p>
+                Экономичная доставка малых партий. Ваши грузы едут вместе с
+                другими — вы платите только за своё место.
+              </p>
+              <span class="service-card__price">от 350 ₽</span>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-грузовая-машина-50.png" alt="" />
+              </div>
+              <h3>FTL — отдельная машина</h3>
+              <p>
+                Весь транспорт только под ваш груз. Без промежуточных складов,
+                самый быстрый маршрут от двери до двери.
+              </p>
+              <span class="service-card__price">от 18 ₽/км</span>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-снежинка-50.png" alt="" />
+              </div>
+              <h3>Рефрижераторы</h3>
+              <p>
+                Перевозка скоропортящихся товаров с контролем температуры от
+                −20°C до +12°C на всём пути.
+              </p>
+              <span class="service-card__price">от 25 ₽/км</span>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-кран-50.png" alt="" />
+              </div>
+              <h3>Негабаритные грузы</h3>
+              <p>
+                Спецтехника, оборудование, металлоконструкции. Согласуем
+                маршруты и разрешения на перевозку.
+              </p>
+              <span class="service-card__price">по запросу</span>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-сейф-50.png" alt="" />
+              </div>
+              <h3>Ответственное хранение</h3>
+              <p>
+                Склад класса А с охраной и температурным режимом. Приёмка,
+                комплектация, отгрузка 24/7.
+              </p>
+              <span class="service-card__price">от 12 ₽/м³ в сутки</span>
+            </div>
+            <div class="service-card reveal">
+              <div class="service-card__icon">
+                <img src="./images/icons8-самолет-50.png" alt="" />
+              </div>
+              <h3>Авиа и море</h3>
+              <p>
+                Мультимодальные перевозки: комбинируем авиа, море, жд и авто для
+                оптимальной цены и срока.
+              </p>
+              <span class="service-card__price">от 90 ₽/кг</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. HOW IT WORKS ===== -->
+      <section class="steps section section--dark" id="steps">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">Как мы работаем</span>
+            <h2>4 простых шага до доставки</h2>
+          </div>
+          <div class="steps__grid">
+            <div class="step reveal">
+              <div class="step__num">01</div>
+              <h3>Заявка</h3>
+              <p>
+                Оставляете заявку на сайте или звоните. Уточняем параметры
+                груза.
+              </p>
+            </div>
+            <div class="step reveal">
+              <div class="step__num">02</div>
+              <h3>Расчёт</h3>
+              <p>За 15 минут считаем стоимость и фиксируем её в договоре.</p>
+            </div>
+            <div class="step reveal">
+              <div class="step__num">03</div>
+              <h3>Перевозка</h3>
+              <p>
+                Забираем груз и везём. Вы отслеживаете машину онлайн в реальном
+                времени.
+              </p>
+            </div>
+            <div class="step reveal">
+              <div class="step__num">04</div>
+              <h3>Доставка</h3>
+              <p>
+                Груз на месте, документы подписаны. Вы получаете закрывающие
+                документы.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. ADVANTAGES ===== -->
+      <section class="advantages section" id="advantages">
+        <div class="container advantages__inner">
+          <div class="advantages__content reveal">
+            <span class="section-label">Почему мы</span>
+            <h2>С нами ваши грузы в надёжных руках</h2>
+            <p class="advantages__lead">
+              Мы построили компанию так, чтобы вы ни о чём не переживали: от
+              оформления документов до выгрузки на адресе.
+            </p>
+            <ul class="advantages__list">
+              <li>
+                <span class="advantages__check">✓</span>
+                <div>
+                  <b>Договор и страховка.</b> Каждый груз застрахован на полную
+                  стоимость. Несём материальную ответственность.
+                </div>
+              </li>
+              <li>
+                <span class="advantages__check">✓</span>
+                <div>
+                  <b>GPS-мониторинг 24/7.</b> Видьте местоположение машины в
+                  любой момент через личный кабинет или по запросу.
+                </div>
+              </li>
+              <li>
+                <span class="advantages__check">✓</span>
+                <div>
+                  <b>Фиксированная цена.</b> Стоимость не изменится после
+                  подписания договора — никаких скрытых доплат.
+                </div>
+              </li>
+              <li>
+                <span class="advantages__check">✓</span>
+                <div>
+                  <b>Личный менеджер.</b> Один специалист ведёт вашу перевозку
+                  от заявки до доставки и всегда на связи.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="advantages__visual reveal">
+            <div class="advantages__card">
+              <div class="advantages__card-num">98.6%</div>
+              <p>грузов доставляем точно в срок</p>
+            </div>
+            <div class="advantages__card advantages__card--accent">
+              <div class="advantages__card-num">0 ₽</div>
+              <p>за простой по нашей вине</p>
+            </div>
+            <div class="advantages__badge-ring">
+              <span>ISO 9001</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. FLEET ===== -->
+      <section class="fleet section" id="fleet">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">Автопарк</span>
+            <h2>240 единиц техники — под любую задачу</h2>
+            <p>
+              Собственный парк от каблуков до автопоездов 20 тонн. Средний
+              возраст — не старше 5 лет.
+            </p>
+          </div>
+          <div class="fleet__grid">
+            <div class="fleet-card reveal">
+              <div class="fleet-card__emoji">
+                <img src="./images/icons8-грузовая-машина-50.png" alt="" />
+              </div>
+              <h3>ГАЗель / Каблук</h3>
+              <ul>
+                <li>До 1,5 тонн</li>
+                <li>Объём до 9 м³</li>
+                <li>Город и область</li>
+              </ul>
+            </div>
+            <div class="fleet-card reveal">
+              <div class="fleet-card__emoji">
+                <img src="./images/icons8-полуприцеп-вид-сбоку-50.png" alt="" />
+              </div>
+              <h3>Среднетоннажник</h3>
+              <ul>
+                <li>До 5 тонн</li>
+                <li>Объём до 36 м³</li>
+                <li>Межгород</li>
+              </ul>
+            </div>
+            <div class="fleet-card fleet-card--hit reveal">
+              <span class="fleet-card__tag">Хит</span>
+              <div class="fleet-card__emoji">
+                <img src="./images/icons8-грузовая-машина-50 (1).png" alt="" />
+              </div>
+              <h3>Еврофура 20 т</h3>
+              <ul>
+                <li>До 20 тонн</li>
+                <li>Объём 92 м³</li>
+                <li>33 европаллеты</li>
+              </ul>
+            </div>
+            <div class="fleet-card reveal">
+              <div class="fleet-card__emoji">
+                <img src="./images/icons8-снежинка-50.png" alt="" />
+              </div>
+              <h3>Рефрижератор</h3>
+              <ul>
+                <li>До 20 тонн</li>
+                <li>−20°C до +12°C</li>
+                <li>Датчики в реальном времени</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 8. CALCULATOR ===== -->
+      <section class="calc section section--dark" id="calculator">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">Калькулятор</span>
+            <h2>Рассчитайте стоимость за 30 секунд</h2>
+          </div>
+          <div class="calc__box reveal">
+            <form class="calc__form" id="calcForm">
+              <div class="calc__field">
+                <label for="calcFrom">Откуда</label>
+                <input
+                  type="text"
+                  id="calcFrom"
+                  placeholder="Москва"
+                  required
+                />
+              </div>
+              <div class="calc__field">
+                <label for="calcTo">Куда</label>
+                <input
+                  type="text"
+                  id="calcTo"
+                  placeholder="Екатеринбург"
+                  required
+                />
+              </div>
+              <div class="calc__field">
+                <label for="calcWeight">Вес, кг</label>
+                <input
+                  type="number"
+                  id="calcWeight"
+                  value="1000"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="calc__field">
+                <label for="calcType">Тип перевозки</label>
+                <select id="calcType">
+                  <option value="ltl">Сборный груз</option>
+                  <option value="ftl">Отдельная машина (FTL)</option>
+                  <option value="fridge">Рефрижератор</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">
+                Рассчитать
+              </button>
+            </form>
+            <div class="calc__result" id="calcResult" hidden>
+              <div class="calc__result-price" id="calcPrice">— ₽</div>
+              <p class="calc__result-text" id="calcText">
+                Предварительная стоимость
+              </p>
+              <small
+                >Точную цену назовёт менеджер после уточнения деталей. Расчёт не
+                обязывает к заказу.</small
+              >
+              <button class="btn btn--ghost btn--sm" id="calcReset">
+                Сбросить
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. GEOGRAPHY ===== -->
+      <section class="geo section" id="geography">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">География</span>
+            <h2>Доставляем туда, куда другие не берутся</h2>
+            <p>Федеральная сеть маршрутов и партнёров в каждом регионе</p>
+          </div>
+          <div class="geo__inner">
+            <div class="geo__map reveal">
+              <img
+                src="https://img.magnific.com/premium-vector/russia-map-line-dots-polygonal-abstract-geometric_23979-366.jpg"
+                alt=""
+              />
+            </div>
+            <div class="geo__routes reveal">
+              <div class="geo__route">
+                <span class="geo__pill">Москва</span> →
+                <span class="geo__pill">Санкт-Петербург</span><b>от 1 дня</b>
+              </div>
+              <div class="geo__route">
+                <span class="geo__pill">Москва</span> →
+                <span class="geo__pill">Екатеринбург</span><b>от 2 дней</b>
+              </div>
+              <div class="geo__route">
+                <span class="geo__pill">Москва</span> →
+                <span class="geo__pill">Новосибирск</span><b>от 4 дней</b>
+              </div>
+              <div class="geo__route">
+                <span class="geo__pill">Москва</span> →
+                <span class="geo__pill">Владивосток</span><b>от 9 дней</b>
+              </div>
+              <div class="geo__route">
+                <span class="geo__pill">Казахстан</span> →
+                <span class="geo__pill">Беларусь</span><b>от 3 дней</b>
+              </div>
+              <p class="geo__note">
+                + 295 городов России, Казахстан, Беларусь, Армения, Киргизия,
+                Узбекистан
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 10. REVIEWS ===== -->
+      <section class="reviews section" id="reviews">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="section-label">Отзывы</span>
+            <h2>Нам доверяют постоянные клиенты</h2>
+          </div>
+          <div class="reviews__slider">
+            <button
+              class="slider-btn slider-btn--prev"
+              id="prevReview"
+              aria-label="Предыдущий"
+            >
+              ‹
+            </button>
+            <div class="reviews__viewport">
+              <div class="reviews__track" id="reviewsTrack">
+                <article class="review">
+                  <div class="review__stars">★★★★★</div>
+                  <p>
+                    «Возим комплектующие из Китая уже два года. Ни одной
+                    задержки, документы всегда в порядке. Отдельное спасибо
+                    менеджеру Ольге — отвечает за 5 минут.»
+                  </p>
+                  <div class="review__author">
+                    <b>Алексей Воронов</b><span>ООО «ТехноПром», логист</span>
+                  </div>
+                </article>
+                <article class="review">
+                  <div class="review__stars">★★★★★</div>
+                  <p>
+                    «Перевезли станок весом 14 тонн из Москвы в Казань.
+                    Согласовали негабарит, приехали с манипулятором. Сделали то,
+                    с чем два других перевозчика не справились.»
+                  </p>
+                  <div class="review__author">
+                    <b>Марина Соколова</b><span>Завод «СтальКомплект»</span>
+                  </div>
+                </article>
+                <article class="review">
+                  <div class="review__stars">★★★★★</div>
+                  <p>
+                    «Отслеживание в реальном времени — это удобно. Смотрю, где
+                    машина, прямо с телефона. Тариф фиксированный в договоре, за
+                    год цена ни разу не изменилась.»
+                  </p>
+                  <div class="review__author">
+                    <b>Дмитрий Ковалёв</b
+                    ><span>Сеть магазинов «ПродМаркет»</span>
+                  </div>
+                </article>
+                <article class="review">
+                  <div class="review__stars">★★★★★</div>
+                  <p>
+                    «Скоропорт отправляем каждую неделю рефрижераторами.
+                    Температурный лог предоставляют по каждой поездке. За 8
+                    месяцев — ни одной потери партии.»
+                  </p>
+                  <div class="review__author">
+                    <b>Елена Громова</b><span>«ФрешФарм», закупки</span>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <button
+              class="slider-btn slider-btn--next"
+              id="nextReview"
+              aria-label="Следующий"
+            >
+              ›
+            </button>
+          </div>
+          <div class="reviews__dots" id="reviewsDots"></div>
+        </div>
+      </section>
+
+      <!-- ===== 11. FAQ ===== -->
+      <section class="faq section" id="faq">
+        <div class="container faq__inner">
+          <div class="faq__head reveal">
+            <span class="section-label">FAQ</span>
+            <h2>Частые вопросы</h2>
+            <p>
+              Не нашли ответ? Позвоните
+              <a href="tel:+78005553535">8 800 555-35-35</a> — расскажем всё.
+            </p>
+          </div>
+          <div class="faq__list reveal">
+            <details class="faq__item">
+              <summary>Как рассчитывается стоимость перевозки?</summary>
+              <p>
+                Цена зависит от расстояния, веса и объёма груза, типа транспорта
+                и срочности. После заявки менеджер присылает точный расчёт в
+                течение 15 минут — и он фиксируется в договоре.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Мой груз застрахован?</summary>
+              <p>
+                Да. Каждый груз автоматически страхуется на полную заявленную
+                стоимость. Дополнительное страхование дорогостоящих грузов (до
+                20 млн ₽) оформляем по запросу.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Можно ли отследить груз в пути?</summary>
+              <p>
+                Конечно. Все машины оснащены GPS-мониторингом. Вы получаете
+                ссылку на онлайн-трекинг и уведомления о ключевых этапах:
+                погрузка, выезд, доставка.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Работаете ли вы с физическими лицами?</summary>
+              <p>
+                Да, мы работаем и с частными клиентами: переезды, доставка
+                мебели, техники, стройматериалов. Оплата наличными, картой или
+                по счёту.
+              </p>
+            </details>
+            <details class="faq__item">
+              <summary>Что если груз повредят или задержат?</summary>
+              <p>
+                По договору мы несём полную материальную ответственность.
+                Задержка по нашей вине компенсируется, повреждённый груз
+                возмещается по страховке в течение 10 рабочих дней.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 12. CTA + CONTACTS ===== -->
+      <section class="contacts section section--dark" id="contacts">
+        <div class="container contacts__inner">
+          <div class="contacts__info reveal">
+            <span class="section-label">Контакты</span>
+            <h2>Оставьте заявку — рассчитаем за 15 минут</h2>
+            <p>
+              Заполните форму, и менеджер свяжется с вами, уточнит детали и
+              пришлёт точный расчёт стоимости.
+            </p>
+            <ul class="contacts__list">
+              <li>
+                <span class="contacts__icon"
+                  ><img
+                    src="./images/icons8-телефон-30.png"
+                    width="25px"
+                    alt=""
+                /></span>
+                <a href="tel:+78005553535">8 800 555-35-35</a> — звонок
+                бесплатный
+              </li>
+              <li>
+                <span class="contacts__icon"
+                  ><img src="./images/icons8-почта-50.png" width="25px" alt=""
+                /></span>
+                <a href="mailto:info@transline.ru">info@transline.ru</a>
+              </li>
+              <li>
+                <span class="contacts__icon"
+                  ><img src="./images/icons8-маркер-50.png" width="25px" alt=""
+                /></span>
+                Москва, ул. Грузинская, д. 12, оф. 305
+              </li>
+              <li>
+                <span class="contacts__icon"
+                  ><img
+                    src="./images/icons8-время-доставки-50.png"
+                    width="25px"
+                    alt=""
+                /></span>
+                Диспетчерская — круглосуточно
+              </li>
+            </ul>
+          </div>
+          <form class="contacts__form reveal" id="orderForm" novalidate>
+            <h3>Заявка на расчёт</h3>
+            <input type="text" name="name" placeholder="Ваше имя" required />
+            <input
+              type="tel"
+              name="phone"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+            <input
+              type="text"
+              name="route"
+              placeholder="Маршрут (откуда → куда)"
+            />
+            <textarea
+              name="comment"
+              rows="3"
+              placeholder="Опишите груз: вес, объём, особенности"
+            ></textarea>
+            <button type="submit" class="btn btn--primary btn--block">
+              Получить расчёт
+            </button>
+            <p class="contacts__policy">
+              Нажимая кнопку, вы соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+            <div class="contacts__success" id="formSuccess" hidden>
+              ✅ Заявка отправлена! Мы позвоним в течение 15 минут.
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <a href="#hero" class="logo">
+          <span class="logo__icon"
+            ><img src="./images/images.png" width="60px" alt=""
+          /></span>
+          <span class="logo__text">Груз <b>Гарант</b></span>
+        </a>
+        <nav class="footer__nav">
+          <a href="#services">Услуги</a>
+          <a href="#fleet">Автопарк</a>
+          <a href="#calculator">Калькулятор</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <p class="footer__copy">© 2026 ТрансЛайн. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <button class="to-top" id="toTop" aria-label="Наверх">↑</button>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
